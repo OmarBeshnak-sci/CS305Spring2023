@@ -30,3 +30,10 @@ public class Fibonacci {
     return arr[n];
   }
 }
+public boolean CF(int n, int f1){
+  double pp = Math.pow((1 + Math.sqrt(5)) / 2 , n);
+  double np = Math.pow((1 - Math.sqrt(5)) / 2 , n);
+  int f = int ((pp - np)/ Math.sqrt(5));
+  boolean b = f == f1;
+  return b;
+}
